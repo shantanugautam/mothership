@@ -10,12 +10,11 @@ class AssetsController < ApplicationController
 
   def show
     @asset = current_user.assets.find(params[:id])
-    respond_with(@asset)
+    # respond_with(@asset)
   end
 
   def new
     @asset = current_user.assets.new
-    # respond_with(@asset)
   end
 
   def edit
